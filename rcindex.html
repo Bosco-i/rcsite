@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+ 
+ <title>Document</title>
+ 
+ <style type="text/css">
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ 
+ body {
+ font-family: cursive;
+ overflow:hidden;
+ }
+ 
+ a {
+ text-decoration: none;
+ }
+ 
+ li {
+ list-style: none;
+ }
+ header {
+ background:rgba(21,96,189,0.8);
+ width:100%;
+ height:150vh;
+ }
+ 
+ 
+ .navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding:
+ color: #fff;
+ }
+ 
+ .nav-links a {
+ color: #fff;
+ 
+ }
+
+
+ /* NAVBAR MENU */
+ .menu {
+ display: flex;
+ gap: 1em;
+ font-size: 12px;
+ 
+ }
+ 
+ .menu li a:hover {
+
+ }
+ .menu li a.active{
+ background:#FD5353;
+ padding:6px;
+ }
+ .container {
+ margin:auto;
+ width:90%;
+ 
+ }
+ 
+ .logo img {
+ width:70px;
+ margin-top:10px;
+ border:2px solid white;
+ border-radius:100%;
+ padding:2px;
+ }
+ 
+ 
+ .menu li {
+ padding: 5px 4px;
+ }
+ 
+ input[type=checkbox] {
+ display: none;
+ } 
+ 
+ /* HAMBURGER MENU */
+ .hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+ color:white;
+ }
+ 
+ .header-section {
+ display:flex;
+align-items:center;
+  }
+ .header-content {
+ flex:95%;
+ color:white;
+ }
+ .header-content h3{
+ font-size:17px;
+ margin:15px auto;
+ }
+ 
+ 
+ .header-content p{
+ margin:15px auto;
+ font-size:12px;
+ 
+ }
+ 
+ .header-img img{
+ width:70%;
+ }
+ .fa-facebook,.fa-twitter,.fa-instagram,
+ .fa-envelope{
+ color:white;
+ background:rgba(21,96,189,0.1);
+ margin:3px auto;
+ cursor:pointer;
+ }
+ .icon{
+ display:flex;
+ flex-direction:column;
+ 
+ }
+ 
+ .btn{
+ color:whitesmoke;
+ background:#FD5353;
+ padding:5px ;
+ border:none;
+ font-size:15px;
+ margin-top:5px;
+ margin-bottom:10px;
+ border-radius:5px;
+ }
+ .btn:hover{
+ background:rgba(21,96,189,0.6);
+ 
+ }
+ /* APPLYING MEDIA QUERIES */
+ @media (max-width: 400px) {
+ .menu {
+ display:none;
+ position: absolute;
+ top:50px;
+ background:rgba(21,96,189,0.6);
+ right: 0;
+ left: 80px;
+ width:200px;
+ text-align: center;
+ padding: 16px 0;
+ }
+ 
+ .menu li a:hover {
+ display: inline-block;
+ border-radius: 5px;
+ color:#FD5353;
+ transition: 0.3s ease;
+ }
+ 
+ .menu li + li {
+ margin-top: 12px;
+ }
+ 
+ input[type=checkbox]:checked ~ .menu {
+ display: block;
+ }
+ 
+ .hamburger {
+ display: block;
+ }
+ 
+ nav .logo img{
+ width:60px;
+ }
+ .header-section {
+ margin:10px auto;
+ flex-direction:column;
+ }
+ 
+ .header-img img{
+ margin-top:170px;
+ max-width:90%;
+ margin-left:40px;
+ }
+ .header-content p,.header-content h3{
+ margin:2px auto;
+ }
+ .icon{
+ flex-direction:row;
+ margin:8px auto;
+ 
+ 
+ }
+ .fa-facebook,.fa-twitter,.fa-instagram,
+ .fa-envelope{
+ 
+ margin:auto 5px;
+
+ }
+ }
+ </style>
+</head>
+
+<body>
+<header>
+<div class="container" >
+ <nav class="navbar">
+   <!-- LOGO -->
+   <div class="logo"><img src="logorc.png"></div>
+
+   <!-- NAVIGATION MENU -->
+   <ul class="nav-links">
+
+     <!-- USING CHECKBOX HACK -->
+     <input type="checkbox" id="checkbox_toggle" />
+     <label for="checkbox_toggle" class="hamburger"><i class="fa fa-bars"></i> </label>
+
+     <!-- NAVIGATION MENUS -->
+     <div class="menu">
+
+     <li><a href="" class="active"  >Home</a></li>
+     <li><a href="" >Products</a></li>
+     <li><a href="" >Opening Hour</a></li>
+     <li><a href="" >Team</a></li>
+     <li><a href="" >Contacts</a></li>
+     </div></ul></nav>
+     
+     <div class="header-section" >
+     <div class="header-content" >
+     <h3>THAT'S WHAT</h3>
+     <h1>I LIKE</h1>
+     <p>RC Cola Pet is a soft drink that has a cool, 
+     refreshing and nice taste
+      that leaves you asking for more.
+       It suits every occasion.</p>
+       <button class="btn" >View all products &#8594</button>
+       
+       
+       </div>
+     <div class="header-img">
+     <img src="prc.png"></div>
+     <div class="icon">
+     <i class="fa fa-facebook" ></i>
+     <i class="fa fa-instagram" ></i>
+      <i class="fa fa-twitter" ></i>
+       <i class="fa fa-envelope" ></i></div>
+     
+     
+   </body></html>
+     
+    
